@@ -8580,10 +8580,11 @@ span#login_widget > .button .badge,
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-height: 80%;
+  min-height: 80vh;
 }
 .modal_stretch .modal-dialog .modal-body {
-  max-height: none;
+  max-height: calc(100vh - 200px);
+  overflow: auto;
   flex: 1;
 }
 @media (min-width: 768px) {
@@ -8722,7 +8723,7 @@ ul.breadcrumb span {
   vertical-align: baseline;
   line-height: 22px;
   position: relative;
-  top: -1px;
+  top: 1px;
 }
 .list_header > div .item_link,
 .list_item > div .item_link {
@@ -8746,7 +8747,6 @@ ul.breadcrumb span {
   vertical-align: baseline;
 }
 .item_buttons {
-  padding-top: 4px;
   line-height: 1em;
   margin-left: -5px;
 }
@@ -8763,6 +8763,7 @@ ul.breadcrumb span {
   min-width: 13ex;
 }
 .item_buttons .running-indicator {
+  padding-top: 4px;
   color: #5cb85c;
 }
 .toolbar_info {
@@ -11814,10 +11815,10 @@ span.nbgrader-label {
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that squares returns the correct output for several inputs&quot;&quot;&quot;</span>
 <span class="kn">from</span> <span class="nn">nose.tools</span> <span class="k">import</span> <span class="n">assert_equal</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">11</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">121</span><span class="p">])</span>
+<span class="c"># assert_equal(squares(1), [1])</span>
+<span class="c"># assert_equal(squares(2), [1, 4])</span>
+<span class="c"># assert_equal(squares(10), [1, 4, 9, 16, 25, 36, 49, 64, 81, 100])</span>
+<span class="c"># assert_equal(squares(11), [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121])</span>
 </pre></div>
 
       </div>
@@ -11932,16 +11933,32 @@ span.nbgrader-label {
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that sum_of_squares returns the correct answer for various inputs.&quot;&quot;&quot;</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="mi">385</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">11</span><span class="p">),</span> <span class="mi">506</span><span class="p">)</span>
+<span class="c"># assert_equal(sum_of_squares(1), 1)</span>
+<span class="c"># assert_equal(sum_of_squares(2), 5)</span>
+<span class="c"># assert_equal(sum_of_squares(10), 385)</span>
+<span class="c"># assert_equal(sum_of_squares(11), 506)</span>
 </pre></div>
 
       </div>
     </div>
     
   </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&apos;Check that sum_of_squares returns the correct answer for various inputs.&apos;</pre>
+</div>
+
+</div>
+
+</div>
 </div>
 
 </div>
