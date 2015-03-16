@@ -8580,11 +8580,10 @@ span#login_widget > .button .badge,
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-height: 80vh;
+  min-height: 80%;
 }
 .modal_stretch .modal-dialog .modal-body {
-  max-height: calc(100vh - 200px);
-  overflow: auto;
+  max-height: none;
   flex: 1;
 }
 @media (min-width: 768px) {
@@ -8723,7 +8722,7 @@ ul.breadcrumb span {
   vertical-align: baseline;
   line-height: 22px;
   position: relative;
-  top: 1px;
+  top: -1px;
 }
 .list_header > div .item_link,
 .list_item > div .item_link {
@@ -8747,6 +8746,7 @@ ul.breadcrumb span {
   vertical-align: baseline;
 }
 .item_buttons {
+  padding-top: 4px;
   line-height: 1em;
   margin-left: -5px;
 }
@@ -8763,7 +8763,6 @@ ul.breadcrumb span {
   min-width: 13ex;
 }
 .item_buttons .running-indicator {
-  padding-top: 4px;
   color: #5cb85c;
 }
 .toolbar_info {
@@ -11614,12 +11613,9 @@ span.nbgrader-label {
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4>Problem 1 (Score: 4.0 / 5.5)</h4>
+        <h4>Problem 1 (Score: 4.0 / 5.0)</h4>
         <div id="toc">
           <ol>
-          
-            
-            
           
             
             
@@ -11691,30 +11687,6 @@ span.nbgrader-label {
             
             
           
-            
-            
-          
-            
-            
-          
-            
-            
-          
-            
-            <li><a href="#plot_axis_limits">Test cell</a> (Score: 0.0 / 0.1)</li>
-            
-            
-          
-            
-            <li><a href="#plot_labels">Test cell</a> (Score: 0.0 / 0.2)</li>
-            
-            
-          
-            
-            <li><a href="#plot_data">Test cell</a> (Score: 0.0 / 0.2)</li>
-            
-            
-          
           </ol>
         </div>
       </div>
@@ -11754,91 +11726,11 @@ span.nbgrader-label {
     </div>
   </div></div>
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div><div class="inner_cell">
-    <div class="input_area">
-      <div class=" highlight hl-ipython3"><pre><span class="c"># import plotting libraries</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</pre></div>
-
-    </div>
-  </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">ImportError</span>                               Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-2-96589df1172f&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansired"># import plotting libraries</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 2</span><span class="ansiyellow"> </span>get_ipython<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow">.</span>magic<span class="ansiyellow">(</span><span class="ansiblue">&apos;matplotlib inline&apos;</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      3</span> <span class="ansigreen">import</span> matplotlib<span class="ansiyellow">.</span>pyplot <span class="ansigreen">as</span> plt<span class="ansiyellow"></span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/interactiveshell.py</span> in <span class="ansicyan">magic</span><span class="ansiblue">(self, arg_s)</span>
-<span class="ansigreen">   2303</span>         magic_name<span class="ansiyellow">,</span> _<span class="ansiyellow">,</span> magic_arg_s <span class="ansiyellow">=</span> arg_s<span class="ansiyellow">.</span>partition<span class="ansiyellow">(</span><span class="ansiblue">&apos; &apos;</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">   2304</span>         magic_name <span class="ansiyellow">=</span> magic_name<span class="ansiyellow">.</span>lstrip<span class="ansiyellow">(</span>prefilter<span class="ansiyellow">.</span>ESC_MAGIC<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">-&gt; 2305</span><span class="ansiyellow">         </span><span class="ansigreen">return</span> self<span class="ansiyellow">.</span>run_line_magic<span class="ansiyellow">(</span>magic_name<span class="ansiyellow">,</span> magic_arg_s<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">   2306</span> <span class="ansiyellow"></span>
-<span class="ansigreen">   2307</span>     <span class="ansired">#-------------------------------------------------------------------------</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/interactiveshell.py</span> in <span class="ansicyan">run_line_magic</span><span class="ansiblue">(self, magic_name, line)</span>
-<span class="ansigreen">   2224</span>                 kwargs<span class="ansiyellow">[</span><span class="ansiblue">&apos;local_ns&apos;</span><span class="ansiyellow">]</span> <span class="ansiyellow">=</span> sys<span class="ansiyellow">.</span>_getframe<span class="ansiyellow">(</span>stack_depth<span class="ansiyellow">)</span><span class="ansiyellow">.</span>f_locals<span class="ansiyellow"></span>
-<span class="ansigreen">   2225</span>             <span class="ansigreen">with</span> self<span class="ansiyellow">.</span>builtin_trap<span class="ansiyellow">:</span><span class="ansiyellow"></span>
-<span class="ansigreen">-&gt; 2226</span><span class="ansiyellow">                 </span>result <span class="ansiyellow">=</span> fn<span class="ansiyellow">(</span><span class="ansiyellow">*</span>args<span class="ansiyellow">,</span><span class="ansiyellow">**</span>kwargs<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">   2227</span>             <span class="ansigreen">return</span> result<span class="ansiyellow"></span>
-<span class="ansigreen">   2228</span> <span class="ansiyellow"></span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/magics/pylab.py</span> in <span class="ansicyan">matplotlib</span><span class="ansiblue">(self, line)</span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/magic.py</span> in <span class="ansicyan">&lt;lambda&gt;</span><span class="ansiblue">(f, *a, **k)</span>
-<span class="ansigreen">    191</span>     <span class="ansired"># but it&apos;s overkill for just that one bit of state.</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
-<span class="ansigreen">    192</span>     <span class="ansigreen">def</span> magic_deco<span class="ansiyellow">(</span>arg<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 193</span><span class="ansiyellow">         </span>call <span class="ansiyellow">=</span> <span class="ansigreen">lambda</span> f<span class="ansiyellow">,</span> <span class="ansiyellow">*</span>a<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>k<span class="ansiyellow">:</span> f<span class="ansiyellow">(</span><span class="ansiyellow">*</span>a<span class="ansiyellow">,</span> <span class="ansiyellow">**</span>k<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    194</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    195</span>         <span class="ansigreen">if</span> callable<span class="ansiyellow">(</span>arg<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/magics/pylab.py</span> in <span class="ansicyan">matplotlib</span><span class="ansiblue">(self, line)</span>
-<span class="ansigreen">     86</span>         &quot;&quot;&quot;
-<span class="ansigreen">     87</span>         args <span class="ansiyellow">=</span> magic_arguments<span class="ansiyellow">.</span>parse_argstring<span class="ansiyellow">(</span>self<span class="ansiyellow">.</span>matplotlib<span class="ansiyellow">,</span> line<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">---&gt; 88</span><span class="ansiyellow">         </span>gui<span class="ansiyellow">,</span> backend <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>shell<span class="ansiyellow">.</span>enable_matplotlib<span class="ansiyellow">(</span>args<span class="ansiyellow">.</span>gui<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">     89</span>         self<span class="ansiyellow">.</span>_show_matplotlib_backend<span class="ansiyellow">(</span>args<span class="ansiyellow">.</span>gui<span class="ansiyellow">,</span> backend<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">     90</span> <span class="ansiyellow"></span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/interactiveshell.py</span> in <span class="ansicyan">enable_matplotlib</span><span class="ansiblue">(self, gui)</span>
-<span class="ansigreen">   3085</span>         &quot;&quot;&quot;
-<span class="ansigreen">   3086</span>         <span class="ansigreen">from</span> IPython<span class="ansiyellow">.</span>core <span class="ansigreen">import</span> pylabtools <span class="ansigreen">as</span> pt<span class="ansiyellow"></span>
-<span class="ansigreen">-&gt; 3087</span><span class="ansiyellow">         </span>gui<span class="ansiyellow">,</span> backend <span class="ansiyellow">=</span> pt<span class="ansiyellow">.</span>find_gui_and_backend<span class="ansiyellow">(</span>gui<span class="ansiyellow">,</span> self<span class="ansiyellow">.</span>pylab_gui_select<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">   3088</span> <span class="ansiyellow"></span>
-<span class="ansigreen">   3089</span>         <span class="ansigreen">if</span> gui <span class="ansiyellow">!=</span> <span class="ansiblue">&apos;inline&apos;</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/home/travis/ipython/IPython/core/pylabtools.py</span> in <span class="ansicyan">find_gui_and_backend</span><span class="ansiblue">(gui, gui_select)</span>
-<span class="ansigreen">    237</span>     &quot;&quot;&quot;
-<span class="ansigreen">    238</span> <span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 239</span><span class="ansiyellow">     </span><span class="ansigreen">import</span> matplotlib<span class="ansiyellow"></span>
-<span class="ansigreen">    240</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    241</span>     <span class="ansigreen">if</span> gui <span class="ansigreen">and</span> gui <span class="ansiyellow">!=</span> <span class="ansiblue">&apos;auto&apos;</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansired">ImportError</span>: No module named &apos;matplotlib&apos;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered">
   <div class="prompt input_prompt">
 </div><div class="inner_cell">
     <div class="text_cell_render border-box-sizing rendered_html">
-      <hr>
-<h2 id="Part-A">Part A<a class="anchor-link" href="#Part-A">&#182;</a></h2>
+      <h2 id="Part-A">Part A<a class="anchor-link" href="#Part-A">&#182;</a></h2>
     </div>
   </div></div>
 
@@ -11853,7 +11745,7 @@ span.nbgrader-label {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div><div class="panel panel-primary nbgrader_cell">
+<div class="prompt input_prompt">In&nbsp;[2]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="comment-0"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right"><a href="#top">(Top)</a></span></div>
     <div class="panel-body">
       <div class="input_area">
@@ -11885,7 +11777,7 @@ span.nbgrader-label {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div><div class="inner_cell">
+<div class="prompt input_prompt">In&nbsp;[3]:</div><div class="inner_cell">
     <div class="input_area">
       <div class=" highlight hl-ipython3"><pre><span class="n">squares</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
@@ -11898,7 +11790,7 @@ span.nbgrader-label {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[4]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -11913,7 +11805,7 @@ span.nbgrader-label {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div><div class="panel panel-primary nbgrader_cell">
+<div class="prompt input_prompt">In&nbsp;[4]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="correct_squares"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>correct_squares</code></span>
   <span class="pull-right">
       Score: 1.0 / 1.0 <a href="#top">(Top)</a>
@@ -11937,7 +11829,7 @@ span.nbgrader-label {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div><div class="panel panel-primary nbgrader_cell">
+<div class="prompt input_prompt">In&nbsp;[5]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="squares_invalid_input"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>squares_invalid_input</code></span>
   <span class="pull-right">
       Score: 1.0 / 1.0 <a href="#top">(Top)</a>
@@ -11977,7 +11869,7 @@ span.nbgrader-label {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div><div class="panel panel-primary nbgrader_cell">
+<div class="prompt input_prompt">In&nbsp;[6]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="comment-1"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right"><a href="#top">(Top)</a></span></div>
     <div class="panel-body">
       <div class="input_area">
@@ -12004,7 +11896,7 @@ span.nbgrader-label {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div><div class="inner_cell">
+<div class="prompt input_prompt">In&nbsp;[7]:</div><div class="inner_cell">
     <div class="input_area">
       <div class=" highlight hl-ipython3"><pre><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
@@ -12017,7 +11909,7 @@ span.nbgrader-label {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -12032,7 +11924,7 @@ span.nbgrader-label {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div><div class="panel panel-primary nbgrader_cell">
+<div class="prompt input_prompt">In&nbsp;[8]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="correct_sum_of_squares"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>correct_sum_of_squares</code></span>
   <span class="pull-right">
       Score: 1.0 / 1.0 <a href="#top">(Top)</a>
@@ -12055,7 +11947,7 @@ span.nbgrader-label {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div><div class="panel panel-primary nbgrader_cell">
+<div class="prompt input_prompt">In&nbsp;[9]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="sum_of_squares_uses_squares"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>sum_of_squares_uses_squares</code></span>
   <span class="pull-right">
       Score: 1.0 / 1.0 <a href="#top">(Top)</a>
@@ -12113,211 +12005,6 @@ span.nbgrader-label {
     
   </div></div>
 
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div><div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <hr>
-<h2 id="Part-D">Part D<a class="anchor-link" href="#Part-D">&#182;</a></h2>
-    </div>
-  </div></div>
-
-<div class="cell border-box-sizing text_cell rendered">
-  <div class="prompt input_prompt">
-</div><div class="inner_cell">
-    <div class="text_cell_render border-box-sizing rendered_html">
-      <p>Create a plot of the sum of squares for $n=1$ to $n=15$. Make sure to appropriately label the $x$-axis and $y$-axis, and to give the plot a title. Set the $x$-axis limits to be 1 (minimum) and 15 (maximum).</p>
-
-    </div>
-  </div></div>
-
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="comment-3"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right"><a href="#top">(Top)</a></span></div>
-    <div class="panel-body">
-      <div class="input_area">
-        <div class=" highlight hl-ipython3"><pre><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span> <span class="c"># do not delete this line!</span>
-<span class="n">s</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
-    <span class="n">s</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">),</span> <span class="n">s</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s">&quot;i&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">&quot;sum&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">&quot;sum of squares&quot;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
-</pre></div>
-
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-11-10582885c6ba&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">----&gt; 1</span><span class="ansiyellow"> </span>fig<span class="ansiyellow">,</span> ax <span class="ansiyellow">=</span> plt<span class="ansiyellow">.</span>subplots<span class="ansiyellow">(</span><span class="ansiyellow">)</span> <span class="ansired"># do not delete this line!</span><span class="ansiyellow"></span>
-<span class="ansigreen">      2</span> s <span class="ansiyellow">=</span> <span class="ansiyellow">[</span><span class="ansiyellow">]</span><span class="ansiyellow"></span>
-<span class="ansigreen">      3</span> <span class="ansigreen">for</span> i <span class="ansigreen">in</span> range<span class="ansiyellow">(</span><span class="ansicyan">1</span><span class="ansiyellow">,</span> <span class="ansicyan">16</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-<span class="ansigreen">      4</span>     s<span class="ansiyellow">.</span>append<span class="ansiyellow">(</span>sum_of_squares<span class="ansiyellow">(</span>i<span class="ansiyellow">)</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      5</span> ax<span class="ansiyellow">.</span>plot<span class="ansiyellow">(</span>range<span class="ansiyellow">(</span><span class="ansicyan">1</span><span class="ansiyellow">,</span> <span class="ansicyan">16</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> s<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-
-<span class="ansired">NameError</span>: name &apos;plt&apos; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="plot_axis_limits"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>plot_axis_limits</code></span>
-  <span class="pull-right">
-      Score: 0.0 / 0.1 <a href="#top">(Top)</a>
-  </span></div>
-    <div class="panel-body">
-      <div class="input_area">
-        <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that the axis limits are correct.&quot;&quot;&quot;</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">(),</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">15.0</span><span class="p">))</span>
-</pre></div>
-
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-12-7eaa2f5456f5&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansiblue">&quot;&quot;&quot;Check that the axis limits are correct.&quot;&quot;&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 2</span><span class="ansiyellow"> </span>assert_equal<span class="ansiyellow">(</span>ax<span class="ansiyellow">.</span>get_xlim<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansiyellow">(</span><span class="ansicyan">1.0</span><span class="ansiyellow">,</span> <span class="ansicyan">15.0</span><span class="ansiyellow">)</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-
-<span class="ansired">NameError</span>: name &apos;ax&apos; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="plot_labels"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>plot_labels</code></span>
-  <span class="pull-right">
-      Score: 0.0 / 0.2 <a href="#top">(Top)</a>
-  </span></div>
-    <div class="panel-body">
-      <div class="input_area">
-        <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that the axis labels and title are set.&quot;&quot;&quot;</span>
-<span class="k">assert</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_xlabel</span><span class="p">()</span> <span class="o">!=</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;xlabel not set&quot;</span>
-<span class="k">assert</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_ylabel</span><span class="p">()</span> <span class="o">!=</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;ylabel not set&quot;</span>
-<span class="k">assert</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_title</span><span class="p">()</span> <span class="o">!=</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="s">&quot;title not set&quot;</span>
-</pre></div>
-
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-13-a14f8f7ab958&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansiblue">&quot;&quot;&quot;Check that the axis labels and title are set.&quot;&quot;&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 2</span><span class="ansiyellow"> </span><span class="ansigreen">assert</span> ax<span class="ansiyellow">.</span>get_xlabel<span class="ansiyellow">(</span><span class="ansiyellow">)</span> <span class="ansiyellow">!=</span> <span class="ansiblue">&quot;&quot;</span><span class="ansiyellow">,</span> <span class="ansiblue">&quot;xlabel not set&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">      3</span> <span class="ansigreen">assert</span> ax<span class="ansiyellow">.</span>get_ylabel<span class="ansiyellow">(</span><span class="ansiyellow">)</span> <span class="ansiyellow">!=</span> <span class="ansiblue">&quot;&quot;</span><span class="ansiyellow">,</span> <span class="ansiblue">&quot;ylabel not set&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">      4</span> <span class="ansigreen">assert</span> ax<span class="ansiyellow">.</span>get_title<span class="ansiyellow">(</span><span class="ansiyellow">)</span> <span class="ansiyellow">!=</span> <span class="ansiblue">&quot;&quot;</span><span class="ansiyellow">,</span> <span class="ansiblue">&quot;title not set&quot;</span><span class="ansiyellow"></span>
-
-<span class="ansired">NameError</span>: name &apos;ax&apos; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div><div class="panel panel-primary nbgrader_cell">
-    <a name="plot_data"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>plot_data</code></span>
-  <span class="pull-right">
-      Score: 0.0 / 0.2 <a href="#top">(Top)</a>
-  </span></div>
-    <div class="panel-body">
-      <div class="input_area">
-        <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that the correct data was used.&quot;&quot;&quot;</span>
-<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_lines</span><span class="p">()</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lines</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="c"># check the x-axis data</span>
-<span class="n">xdata</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_xdata</span><span class="p">()</span>
-<span class="n">xdata_correct</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">xdata</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">xdata_correct</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="k">assert</span> <span class="p">(</span><span class="n">xdata</span> <span class="o">==</span> <span class="n">xdata_correct</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-
-<span class="c"># check the y-axis data</span>
-<span class="n">ydata</span> <span class="o">=</span> <span class="n">lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get_ydata</span><span class="p">()</span>
-<span class="n">ydata_correct</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xdata</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">ydata</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">ydata_correct</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="k">assert</span> <span class="p">(</span><span class="n">ydata</span> <span class="o">==</span> <span class="n">ydata_correct</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-</pre></div>
-
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">NameError</span>                                 Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-14-bcad5ce4f44a&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansiblue">&quot;&quot;&quot;Check that the correct data was used.&quot;&quot;&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 2</span><span class="ansiyellow"> </span>lines <span class="ansiyellow">=</span> ax<span class="ansiyellow">.</span>get_lines<span class="ansiyellow">(</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      3</span> assert_equal<span class="ansiyellow">(</span>len<span class="ansiyellow">(</span>lines<span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansicyan">1</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      4</span> <span class="ansiyellow"></span>
-<span class="ansigreen">      5</span> <span class="ansired"># check the x-axis data</span><span class="ansiyellow"></span><span class="ansiyellow"></span>
-
-<span class="ansired">NameError</span>: name &apos;ax&apos; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
           </div>
         </div>
       </div>
