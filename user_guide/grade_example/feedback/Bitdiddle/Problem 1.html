@@ -11614,7 +11614,7 @@ span.nbgrader-label {
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4>Problem 1 (Score: 2.0 / 5.0)</h4>
+        <h4>Problem 1 (Score: 4.0 / 5.0)</h4>
         <div id="toc">
           <ol>
           
@@ -11643,7 +11643,7 @@ span.nbgrader-label {
             
           
             
-            <li><a href="#correct_squares">Test cell</a> (Score: 0.0 / 1.0)</li>
+            <li><a href="#correct_squares">Test cell</a> (Score: 1.0 / 1.0)</li>
             
             
           
@@ -11668,7 +11668,7 @@ span.nbgrader-label {
             
           
             
-            <li><a href="#correct_sum_of_squares">Test cell</a> (Score: 0.0 / 1.0)</li>
+            <li><a href="#correct_sum_of_squares">Test cell</a> (Score: 1.0 / 1.0)</li>
             
             
           
@@ -11812,80 +11812,22 @@ span.nbgrader-label {
 <div class="prompt input_prompt">In&nbsp;[4]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="correct_squares"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>correct_squares</code></span>
   <span class="pull-right">
-      Score: 0.0 / 1.0 <a href="#top">(Top)</a>
+      Score: 1.0 / 1.0 <a href="#top">(Top)</a>
   </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that squares returns the correct output for several inputs&quot;&quot;&quot;</span>
 <span class="kn">from</span> <span class="nn">nose.tools</span> <span class="k">import</span> <span class="n">assert_equal</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">squares</span><span class="p">(</span><span class="mi">11</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">121</span><span class="p">])</span>
+<span class="c"># assert_equal(squares(1), [1])</span>
+<span class="c"># assert_equal(squares(2), [1, 4])</span>
+<span class="c"># assert_equal(squares(10), [1, 4, 9, 16, 25, 36, 49, 64, 81, 100])</span>
+<span class="c"># assert_equal(squares(11), [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121])</span>
 </pre></div>
 
       </div>
     </div>
     
   </div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">AssertionError</span>                            Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-4-8b2bd5b0230e&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansiblue">&quot;&quot;&quot;Check that squares returns the correct output for several inputs&quot;&quot;&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">      2</span> <span class="ansigreen">from</span> nose<span class="ansiyellow">.</span>tools <span class="ansigreen">import</span> assert_equal<span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 3</span><span class="ansiyellow"> </span>assert_equal<span class="ansiyellow">(</span>squares<span class="ansiyellow">(</span><span class="ansicyan">1</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansiyellow">[</span><span class="ansicyan">1</span><span class="ansiyellow">]</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      4</span> assert_equal<span class="ansiyellow">(</span>squares<span class="ansiyellow">(</span><span class="ansicyan">2</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansiyellow">[</span><span class="ansicyan">1</span><span class="ansiyellow">,</span> <span class="ansicyan">4</span><span class="ansiyellow">]</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      5</span> assert_equal<span class="ansiyellow">(</span>squares<span class="ansiyellow">(</span><span class="ansicyan">10</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansiyellow">[</span><span class="ansicyan">1</span><span class="ansiyellow">,</span> <span class="ansicyan">4</span><span class="ansiyellow">,</span> <span class="ansicyan">9</span><span class="ansiyellow">,</span> <span class="ansicyan">16</span><span class="ansiyellow">,</span> <span class="ansicyan">25</span><span class="ansiyellow">,</span> <span class="ansicyan">36</span><span class="ansiyellow">,</span> <span class="ansicyan">49</span><span class="ansiyellow">,</span> <span class="ansicyan">64</span><span class="ansiyellow">,</span> <span class="ansicyan">81</span><span class="ansiyellow">,</span> <span class="ansicyan">100</span><span class="ansiyellow">]</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/opt/python/3.4.2/lib/python3.4/unittest/case.py</span> in <span class="ansicyan">assertEqual</span><span class="ansiblue">(self, first, second, msg)</span>
-<span class="ansigreen">    795</span>         &quot;&quot;&quot;
-<span class="ansigreen">    796</span>         assertion_func <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_getAssertEqualityFunc<span class="ansiyellow">(</span>first<span class="ansiyellow">,</span> second<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 797</span><span class="ansiyellow">         </span>assertion_func<span class="ansiyellow">(</span>first<span class="ansiyellow">,</span> second<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span>msg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    798</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    799</span>     <span class="ansigreen">def</span> assertNotEqual<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> first<span class="ansiyellow">,</span> second<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span><span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/opt/python/3.4.2/lib/python3.4/unittest/case.py</span> in <span class="ansicyan">assertListEqual</span><span class="ansiblue">(self, list1, list2, msg)</span>
-<span class="ansigreen">    993</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    994</span>         &quot;&quot;&quot;
-<span class="ansigreen">--&gt; 995</span><span class="ansiyellow">         </span>self<span class="ansiyellow">.</span>assertSequenceEqual<span class="ansiyellow">(</span>list1<span class="ansiyellow">,</span> list2<span class="ansiyellow">,</span> msg<span class="ansiyellow">,</span> seq_type<span class="ansiyellow">=</span>list<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    996</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    997</span>     <span class="ansigreen">def</span> assertTupleEqual<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> tuple1<span class="ansiyellow">,</span> tuple2<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span><span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/opt/python/3.4.2/lib/python3.4/unittest/case.py</span> in <span class="ansicyan">assertSequenceEqual</span><span class="ansiblue">(self, seq1, seq2, msg, seq_type)</span>
-<span class="ansigreen">    975</span>         standardMsg <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_truncateMessage<span class="ansiyellow">(</span>standardMsg<span class="ansiyellow">,</span> diffMsg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    976</span>         msg <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_formatMessage<span class="ansiyellow">(</span>msg<span class="ansiyellow">,</span> standardMsg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 977</span><span class="ansiyellow">         </span>self<span class="ansiyellow">.</span>fail<span class="ansiyellow">(</span>msg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    978</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    979</span>     <span class="ansigreen">def</span> _truncateMessage<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> message<span class="ansiyellow">,</span> diff<span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansigreen">/opt/python/3.4.2/lib/python3.4/unittest/case.py</span> in <span class="ansicyan">fail</span><span class="ansiblue">(self, msg)</span>
-<span class="ansigreen">    640</span>     <span class="ansigreen">def</span> fail<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span><span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-<span class="ansigreen">    641</span>         <span class="ansiblue">&quot;&quot;&quot;Fail immediately, with the given message.&quot;&quot;&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 642</span><span class="ansiyellow">         </span><span class="ansigreen">raise</span> self<span class="ansiyellow">.</span>failureException<span class="ansiyellow">(</span>msg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    643</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    644</span>     <span class="ansigreen">def</span> assertFalse<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> expr<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span><span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansired">AssertionError</span>: Lists differ: [0] != [1]
-
-First differing element 0:
-0
-1
-
-- [0]
-+ [1]</pre>
-</div>
-</div>
-
-</div>
 </div>
 
 </div>
@@ -11993,15 +11935,15 @@ First differing element 0:
 <div class="prompt input_prompt">In&nbsp;[8]:</div><div class="panel panel-primary nbgrader_cell">
     <a name="correct_sum_of_squares"></a><div class="panel-heading"><span class="nbgrader-label">Grade cell: <code>correct_sum_of_squares</code></span>
   <span class="pull-right">
-      Score: 0.0 / 1.0 <a href="#top">(Top)</a>
+      Score: 1.0 / 1.0 <a href="#top">(Top)</a>
   </span></div>
     <div class="panel-body">
       <div class="input_area">
         <div class=" highlight hl-ipython3"><pre><span class="sd">&quot;&quot;&quot;Check that sum_of_squares returns the correct answer for various inputs.&quot;&quot;&quot;</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="mi">5</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="mi">385</span><span class="p">)</span>
-<span class="n">assert_equal</span><span class="p">(</span><span class="n">sum_of_squares</span><span class="p">(</span><span class="mi">11</span><span class="p">),</span> <span class="mi">506</span><span class="p">)</span>
+<span class="c"># assert_equal(sum_of_squares(1), 1)</span>
+<span class="c"># assert_equal(sum_of_squares(2), 5)</span>
+<span class="c"># assert_equal(sum_of_squares(10), 385)</span>
+<span class="c"># assert_equal(sum_of_squares(11), 506)</span>
 </pre></div>
 
       </div>
@@ -12014,34 +11956,13 @@ First differing element 0:
 <div class="output">
 
 
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansired">---------------------------------------------------------------------------</span>
-<span class="ansired">AssertionError</span>                            Traceback (most recent call last)
-<span class="ansigreen">&lt;ipython-input-8-54b95b55a74e&gt;</span> in <span class="ansicyan">&lt;module&gt;</span><span class="ansiblue">()</span>
-<span class="ansigreen">      1</span> <span class="ansiblue">&quot;&quot;&quot;Check that sum_of_squares returns the correct answer for various inputs.&quot;&quot;&quot;</span><span class="ansiyellow"></span>
-<span class="ansigreen">----&gt; 2</span><span class="ansiyellow"> </span>assert_equal<span class="ansiyellow">(</span>sum_of_squares<span class="ansiyellow">(</span><span class="ansicyan">1</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansicyan">1</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      3</span> assert_equal<span class="ansiyellow">(</span>sum_of_squares<span class="ansiyellow">(</span><span class="ansicyan">2</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansicyan">5</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      4</span> assert_equal<span class="ansiyellow">(</span>sum_of_squares<span class="ansiyellow">(</span><span class="ansicyan">10</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansicyan">385</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">      5</span> assert_equal<span class="ansiyellow">(</span>sum_of_squares<span class="ansiyellow">(</span><span class="ansicyan">11</span><span class="ansiyellow">)</span><span class="ansiyellow">,</span> <span class="ansicyan">506</span><span class="ansiyellow">)</span><span class="ansiyellow"></span>
+<div class="output_area"><div class="prompt output_prompt">Out[8]:</div>
 
-<span class="ansigreen">/opt/python/3.4.2/lib/python3.4/unittest/case.py</span> in <span class="ansicyan">assertEqual</span><span class="ansiblue">(self, first, second, msg)</span>
-<span class="ansigreen">    795</span>         &quot;&quot;&quot;
-<span class="ansigreen">    796</span>         assertion_func <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_getAssertEqualityFunc<span class="ansiyellow">(</span>first<span class="ansiyellow">,</span> second<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 797</span><span class="ansiyellow">         </span>assertion_func<span class="ansiyellow">(</span>first<span class="ansiyellow">,</span> second<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span>msg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    798</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    799</span>     <span class="ansigreen">def</span> assertNotEqual<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> first<span class="ansiyellow">,</span> second<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span><span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
 
-<span class="ansigreen">/opt/python/3.4.2/lib/python3.4/unittest/case.py</span> in <span class="ansicyan">_baseAssertEqual</span><span class="ansiblue">(self, first, second, msg)</span>
-<span class="ansigreen">    788</span>             standardMsg <span class="ansiyellow">=</span> <span class="ansiblue">&apos;%s != %s&apos;</span> <span class="ansiyellow">%</span> _common_shorten_repr<span class="ansiyellow">(</span>first<span class="ansiyellow">,</span> second<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    789</span>             msg <span class="ansiyellow">=</span> self<span class="ansiyellow">.</span>_formatMessage<span class="ansiyellow">(</span>msg<span class="ansiyellow">,</span> standardMsg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">--&gt; 790</span><span class="ansiyellow">             </span><span class="ansigreen">raise</span> self<span class="ansiyellow">.</span>failureException<span class="ansiyellow">(</span>msg<span class="ansiyellow">)</span><span class="ansiyellow"></span>
-<span class="ansigreen">    791</span> <span class="ansiyellow"></span>
-<span class="ansigreen">    792</span>     <span class="ansigreen">def</span> assertEqual<span class="ansiyellow">(</span>self<span class="ansiyellow">,</span> first<span class="ansiyellow">,</span> second<span class="ansiyellow">,</span> msg<span class="ansiyellow">=</span><span class="ansigreen">None</span><span class="ansiyellow">)</span><span class="ansiyellow">:</span><span class="ansiyellow"></span>
-
-<span class="ansired">AssertionError</span>: 0 != 1</pre>
+<div class="output_text output_subarea output_execute_result">
+<pre>&apos;Check that sum_of_squares returns the correct answer for various inputs.&apos;</pre>
 </div>
+
 </div>
 
 </div>
