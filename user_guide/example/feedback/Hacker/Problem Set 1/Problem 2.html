@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<title>Problem 2</title>
+
+
+
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+    <!-- End of mathjax configuration -->
+
+<style>
+td.center, th.center {
+    text-align: center;
+}
+
+body {
+  overflow: visible;
+  font-size: 14px;
+  padding-top: 1em;
+}
+
+div#notebook {
+  overflow: visible;
+  border-top: none;
+}
+
+div#notebook-container {
+  width: 100%;
+}
+
+@media print {
+  div.cell {
+    display: block;
+    page-break-inside: avoid;
+  } 
+  div.output_wrapper { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+  div.output { 
+    display: block;
+    page-break-inside: avoid; 
+  }
+}
+
+div.prompt {
+  min-width: 21ex;
+}
+
+div.nbgrader_cell {
+    width: 100%;
+}
+
+div.nbgrader_cell .panel-heading {
+    padding: 0.4em 0.6em;
+    height: 37px;
+}
+
+div.nbgrader_cell .panel-heading a {
+    color: #BBBBBB;
+}
+
+div.nbgrader_cell .panel-footer {
+    padding: 0.4em 0.6em;
+}
+
+div.nbgrader_cell .panel-body {
+    padding: 0.4em;
+}
+
+.comment {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+div.nbgrader_cell .input_area {
+    background: white;
+    border: none;
+}
+
+.score {
+    color: black;
+}
+
+span.nbgrader-label {
+    line-height: 25px;
+}
+
+.save-icon {
+    margin-left: 1em;
+    top: 4px;
+}
+</style>
+
+</head>
+<body>
+  <a name="top"></a>
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4>Problem 2 (Score: 0.0 / 2.0)</h4>
+        <div id="toc">
+          <ol>
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            <li><a href="#part-a">Test cell</a> (Score: 0.0 / 1.0)</li>
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            <li><a href="#part-b">Test cell</a> (Score: 0.0 / 1.0)</li>
+            
+            
+          
+          </ol>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div id="notebook" class="border-box-sizing">
+          <div class="container" id="notebook-container">
+            
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <p>Before you turn this problem in, make sure everything runs as expected. First, <strong>restart the kernel</strong> (in the menubar, select Kernel$\rightarrow$Restart) and then <strong>run all cells</strong> (in the menubar, select Cell$\rightarrow$Run All).</p>
+<p>Make sure you fill in any place that says <code>YOUR CODE HERE</code> or "YOUR ANSWER HERE", as well as your name and collaborators below:</p>
+
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div><div class="inner_cell">
+    <div class="input_area">
+      <div class=" highlight hl-ipython3"><pre><span class="n">NAME</span> <span class="o">=</span> <span class="s">&quot;Alyssa P. Hacker&quot;</span>
+<span class="n">COLLABORATORS</span> <span class="o">=</span> <span class="s">&quot;Ben Bitdiddle&quot;</span>
+</pre></div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <hr>
+
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <p>Consider the following piece of code:</p>
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <hr>
+<h2 id="Part-A">Part A<a class="anchor-link" href="#Part-A">&#182;</a></h2>
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <p>Describe, in words, what this code does, and how it does it.</p>
+
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="panel panel-primary nbgrader_cell">
+    <a name="comment-0"></a><a name="part-a"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
+      Score: 0.0 / 1.0 <a href="#top">(Top)</a>
+  </span></div>
+    <div class="panel-body">
+      <div class="text_cell_render border-box-sizing rendered_html">
+        <p>It computes the fibonacci sequence using recursion, with base cases of $x=0$ and $x=1$.</p>
+
+      </div>
+    </div>
+    
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <hr>
+<h2 id="Part-B">Part B<a class="anchor-link" href="#Part-B">&#182;</a></h2>
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="inner_cell">
+    <div class="text_cell_render border-box-sizing rendered_html">
+      <p>For what inputs will this function not behave as expected? What will happen?</p>
+
+    </div>
+  </div></div>
+
+<div class="cell border-box-sizing text_cell rendered">
+  <div class="prompt input_prompt">
+</div><div class="panel panel-primary nbgrader_cell">
+    <a name="comment-1"></a><a name="part-b"></a><div class="panel-heading"><span class="nbgrader-label">Student's answer</span><span class="pull-right">
+      Score: 0.0 / 1.0 <a href="#top">(Top)</a>
+  </span></div>
+    <div class="panel-body">
+      <div class="text_cell_render border-box-sizing rendered_html">
+        <p>When $x<0$, the function will recurse infinitely.</p>
+
+      </div>
+    </div>
+    
+  </div></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
