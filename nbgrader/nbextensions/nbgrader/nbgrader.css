@@ -1,0 +1,28 @@
+div.nbgrader-points, div.nbgrader-id {
+    margin-right: 0.5em;
+}
+
+input.nbgrader-points-input {
+    width: 3.5em;
+    height: 22px;
+    text-align: right;
+    line-height: 10px;
+}
+
+input.nbgrader-id-input {
+    height: 22px;
+    text-align: left;
+}
+
+#nbgrader-total-points {
+    width: 3em;
+    height: 24px;
+    text-align: right;
+    line-height: 10px;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+div.nbgrader-grade-cell {
+    background-color: #FFA;
+}
