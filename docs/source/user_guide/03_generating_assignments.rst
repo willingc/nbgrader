@@ -7,10 +7,10 @@ Releasing an assignment
     :doc:`/command_line_tools/nbgrader-assign`
         Command line options for ``nbgrader assign``
         
-    :doc:`1_philosophy`
+    :doc:`01_philosophy`
         Details about how the directory hierarchy is structured
 
-After an assignment has been created with the assignment toolbar, you will want to create a release version of the assignment for the students. As described in :doc:`1_philosophy`, you need to organize your files in a particular way. For releasing assignments, you should have the master copy of your files saved (by default) in the following directory structure:
+After an assignment has been created with the assignment toolbar, you will want to create a release version of the assignment for the students. As described in :doc:`01_philosophy`, you need to organize your files in a particular way. For releasing assignments, you should have the master copy of your files saved (by default) in the following directory structure:
 
 ::
 
@@ -60,16 +60,13 @@ we'll also include a due date for it:
     
     # add the assignment to the database
     gb.add_assignment("Problem Set 1", duedate="2015-02-01 15:00:00.000000 PST")
-    
-    # show what assignments exist
-    gb.assignments
 
 
 
 
 .. parsed-literal::
 
-    [Problem Set 1]
+    Problem Set 1
 
 
 

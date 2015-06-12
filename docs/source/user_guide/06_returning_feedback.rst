@@ -7,10 +7,10 @@ Returning feedback to students
     :doc:`/command_line_tools/nbgrader-feedback`
         Command line options for ``nbgrader feedback``
         
-    :doc:`1_philosophy`
+    :doc:`01_philosophy`
         Details about how the directory hierarchy is structured
 
-After assignments have been autograded and/or manually graded, they will located in the `autograded` directory (see :doc:`1_philosophy` for details):
+After assignments have been autograded and/or manually graded, they will located in the `autograded` directory (see :doc:`01_philosophy` for details):
 
 ::
 

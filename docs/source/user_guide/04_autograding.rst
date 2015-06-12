@@ -7,10 +7,10 @@ Autograde a students' solution
     :doc:`/command_line_tools/nbgrader-autograde`
         Command line options for ``nbgrader autograde``
         
-    :doc:`1_philosophy`
+    :doc:`01_philosophy`
         Details about how the directory hierarchy is structured
 
-After assignments have been submitted by students, you will want to save them into a ``submitted`` directory. As described in :doc:`1_philosophy`, you need to organize your files in a particular way. For autograding assignments, you should have the submitted versions of students' assignments organized as follows:
+After assignments have been submitted by students, you will want to save them into a ``submitted`` directory. As described in :doc:`01_philosophy`, you need to organize your files in a particular way. For autograding assignments, you should have the submitted versions of students' assignments organized as follows:
 
 ::
 
@@ -54,24 +54,21 @@ their grades:
     from nbgrader.api import Gradebook
     gb = Gradebook("sqlite:///gradebook.db")
     
-    # create some students and add them to the database
+    # add some students to the database
     gb.add_student("Bitdiddle", first_name="Ben", last_name="Bitdiddle")
     gb.add_student("Hacker", first_name="Alyssa", last_name="Hacker")
     gb.add_student("Reasoner", first_name="Louis", last_name="Reasoner")
-    
-    # show what students are in the database
-    gb.students
 
 
 
 
 .. parsed-literal::
 
-    [Bitdiddle, Hacker, Reasoner]
+    Reasoner
 
 
 
-Note: the assignment should also already be in the database. An example of how to add it is given in :doc:`3_releasing_assignments`.
+Note: the assignment should also already be in the database. An example of how to add it is given in :doc:`03_generating_assignments`.
 
 Once the database has been set up with the students, we can run the
 autograder:
