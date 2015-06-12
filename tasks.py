@@ -1,5 +1,7 @@
 import os
 import re
+import shutil
+
 from invoke import task
 from invoke import run as _run
 from copy import deepcopy
@@ -104,20 +106,30 @@ def docs(root='docs'):
     for dirname, dirnames, filenames in os.walk('source/user_guide'):
         if dirname == 'source/user_guide':
             continue
+        if dirname == 'source/user_guide/images':
+            continue
+
+        build_directory = os.path.join('source', 'extra_files', os.path.relpath(dirname, 'source'))
+        if not os.path.exists(build_directory):
+            os.makedirs(build_directory)
+
         for filename in filenames:
-            if not filename.endswith('.ipynb'):
-                continue
+            if filename.endswith('.ipynb'):
+                run(
+                    "ipython nbconvert "
+                    "--to html "
+                    "--FilesWriter.build_directory='{}' "
+                    "--profile-dir=/tmp "
+                    "'{}'".format(build_directory, os.path.join(dirname, filename)))
 
-            run(
-                "ipython nbconvert "
-                "--to html "
-                "--FilesWriter.build_directory='{}' "
-                "--profile-dir=/tmp "
-                "'{}'".format(dirname, os.path.join(dirname, filename)))
+                src = os.path.join(build_directory, os.path.splitext(filename)[0] + '.html')
+                dst = os.path.join(build_directory, filename)
+                os.rename(src, dst)
 
-    # generate config options and stuff
-    run('python autogen_command_line.py')
-    run('python autogen_config.py')
+            else:
+                shutil.copy(
+                    os.path.join(dirname, filename),
+                    os.path.join(build_directory, filename))
 
     os.chdir(cwd)
 
@@ -182,7 +194,7 @@ def publish_docs(github_token, git_name, git_email):
 
     # switch to the docs branch, and get the latest version from master
     run('git checkout docs')
-    run('rm -r *')
+    run('rm -rf *')
     run('ls -a')
     run('git checkout {} -- .'.format(commit))
     run('git reset HEAD -- .travis.yml .gitignore')

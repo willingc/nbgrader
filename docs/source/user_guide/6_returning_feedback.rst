@@ -32,16 +32,16 @@ There are two submissions of the assignment that have been graded:
 Autograded submission 1:
 
 -  `autograded/Bitdiddle/Problem Set 1/Problem
-   1.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%201.html>`__
+   1.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%201.ipynb>`__
 -  `autograded/Bitdiddle/Problem Set 1/Problem
-   2.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%202.html>`__
+   2.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%202.ipynb>`__
 
 Autograded submission 2:
 
 -  `autograded/Hacker/Problem Set 1/Problem
-   1.ipynb <autograded/Hacker/Problem%20Set%201/Problem%201.html>`__
+   1.ipynb <autograded/Hacker/Problem%20Set%201/Problem%201.ipynb>`__
 -  `autograded/Hacker/Problem Set 1/Problem
-   2.ipynb <autograded/Hacker/Problem%20Set%201/Problem%202.html>`__
+   2.ipynb <autograded/Hacker/Problem%20Set%201/Problem%202.ipynb>`__
 
 Generating feedback is fairly straigtforward:
 
