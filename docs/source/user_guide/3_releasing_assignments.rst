@@ -36,9 +36,9 @@ Example
 In the following example, we have an assignment with two notebooks:
 
 -  `source/Problem Set 1/Problem
-   1.ipynb <source/Problem%20Set%201/Problem%201.ipynb>`__
+   1.ipynb <source/Problem%20Set%201/Problem%201.html>`__
 -  `source/Problem Set 1/Problem
-   2.ipynb <source/Problem%20Set%201/Problem%202.ipynb>`__
+   2.ipynb <source/Problem%20Set%201/Problem%202.html>`__
 
 Before we can create the release version, we first need to set up the
 database. We'll use the default database url, which is just to a sqlite
@@ -101,6 +101,6 @@ same structure as ``source``, but with the actual release version of the
 files:
 
 -  `release/Problem Set 1/Problem
-   1.ipynb <release/Problem%20Set%201/Problem%201.ipynb>`__
+   1.ipynb <release/Problem%20Set%201/Problem%201.html>`__
 -  `release/Problem Set 1/Problem
-   2.ipynb <release/Problem%20Set%201/Problem%202.ipynb>`__
+   2.ipynb <release/Problem%20Set%201/Problem%202.html>`__

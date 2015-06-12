@@ -32,16 +32,16 @@ There are two submissions of the assignment:
 Submission 1:
 
 -  `submitted/Bitdiddle/Problem Set 1/Problem
-   1.ipynb <submitted/Bitdiddle/Problem%20Set%201/Problem%201.ipynb>`__
+   1.ipynb <submitted/Bitdiddle/Problem%20Set%201/Problem%201.html>`__
 -  `submitted/Bitdiddle/Problem Set 1/Problem
-   2.ipynb <submitted/Bitdiddle/Problem%20Set%201/Problem%202.ipynb>`__
+   2.ipynb <submitted/Bitdiddle/Problem%20Set%201/Problem%202.html>`__
 
 Submission 2:
 
 -  `submitted/Hacker/Problem Set 1/Problem
-   1.ipynb <submitted/Hacker/Problem%20Set%201/Problem%201.ipynb>`__
+   1.ipynb <submitted/Hacker/Problem%20Set%201/Problem%201.html>`__
 -  `submitted/Hacker/Problem Set 1/Problem
-   2.ipynb <submitted/Hacker/Problem%20Set%201/Problem%202.ipynb>`__
+   2.ipynb <submitted/Hacker/Problem%20Set%201/Problem%202.html>`__
 
 Before we can actually start grading, we need to actually record who the
 students are. We can do this using the API provided by nbgrader, which
@@ -153,13 +153,13 @@ autograded versions of the submissions:
 Autograded submission 1:
 
 -  `autograded/Bitdiddle/Problem Set 1/Problem
-   1.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%201.ipynb>`__
+   1.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%201.html>`__
 -  `autograded/Bitdiddle/Problem Set 1/Problem
-   2.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%202.ipynb>`__
+   2.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%202.html>`__
 
 Autograded submission 2:
 
 -  `autograded/Hacker/Problem Set 1/Problem
-   1.ipynb <autograded/Hacker/Problem%20Set%201/Problem%201.ipynb>`__
+   1.ipynb <autograded/Hacker/Problem%20Set%201/Problem%201.html>`__
 -  `autograded/Hacker/Problem Set 1/Problem
-   2.ipynb <autograded/Hacker/Problem%20Set%201/Problem%202.ipynb>`__
+   2.ipynb <autograded/Hacker/Problem%20Set%201/Problem%202.html>`__
