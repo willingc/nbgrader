@@ -32,16 +32,16 @@ There are two submissions of the assignment that have been graded:
 Autograded submission 1:
 
 -  `autograded/Bitdiddle/Problem Set 1/Problem
-   1.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%201.html>`__
+   1.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%201.html>`_
 -  `autograded/Bitdiddle/Problem Set 1/Problem
-   2.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%202.html>`__
+   2.ipynb <autograded/Bitdiddle/Problem%20Set%201/Problem%202.html>`_
 
 Autograded submission 2:
 
 -  `autograded/Hacker/Problem Set 1/Problem
-   1.ipynb <autograded/Hacker/Problem%20Set%201/Problem%201.html>`__
+   1.ipynb <autograded/Hacker/Problem%20Set%201/Problem%201.html>`_
 -  `autograded/Hacker/Problem Set 1/Problem
-   2.ipynb <autograded/Hacker/Problem%20Set%201/Problem%202.html>`__
+   2.ipynb <autograded/Hacker/Problem%20Set%201/Problem%202.html>`_
 
 Generating feedback is fairly straigtforward:
 
@@ -57,16 +57,16 @@ Generating feedback is fairly straigtforward:
     [FeedbackApp | INFO] Linking autograded/Bitdiddle/Problem Set 1/jupyter.png -> feedback/Bitdiddle/Problem Set 1/jupyter.png
     [FeedbackApp | INFO] Linking autograded/Bitdiddle/Problem Set 1/timestamp.txt -> feedback/Bitdiddle/Problem Set 1/timestamp.txt
     [FeedbackApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 1.ipynb to html
-    [FeedbackApp | INFO] Writing 227469 bytes to feedback/Bitdiddle/Problem Set 1/Problem 1.html
+    [FeedbackApp | INFO] Writing 277013 bytes to feedback/Bitdiddle/Problem Set 1/Problem 1.html
     [FeedbackApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb to html
-    [FeedbackApp | INFO] Writing 201455 bytes to feedback/Bitdiddle/Problem Set 1/Problem 2.html
+    [FeedbackApp | INFO] Writing 250939 bytes to feedback/Bitdiddle/Problem Set 1/Problem 2.html
     [FeedbackApp | INFO] Setting destination file permissions to 444
     [FeedbackApp | INFO] Linking autograded/Hacker/Problem Set 1/jupyter.png -> feedback/Hacker/Problem Set 1/jupyter.png
     [FeedbackApp | INFO] Linking autograded/Hacker/Problem Set 1/timestamp.txt -> feedback/Hacker/Problem Set 1/timestamp.txt
     [FeedbackApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 1.ipynb to html
-    [FeedbackApp | INFO] Writing 213570 bytes to feedback/Hacker/Problem Set 1/Problem 1.html
+    [FeedbackApp | INFO] Writing 263054 bytes to feedback/Hacker/Problem Set 1/Problem 1.html
     [FeedbackApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 2.ipynb to html
-    [FeedbackApp | INFO] Writing 201547 bytes to feedback/Hacker/Problem Set 1/Problem 2.html
+    [FeedbackApp | INFO] Writing 251031 bytes to feedback/Hacker/Problem Set 1/Problem 2.html
     [FeedbackApp | INFO] Setting destination file permissions to 444
 
 
@@ -76,13 +76,13 @@ HTML files corresponding to each notebook in each submission:
 Feedback for submission 1:
 
 -  `feedback/Bitdiddle/Problem Set 1/Problem
-   1.html <feedback/Bitdiddle/Problem%20Set%201/Problem%201.html>`__
+   1.html <feedback/Bitdiddle/Problem%20Set%201/Problem%201.html>`_
 -  `feedback/Bitdiddle/Problem Set 1/Problem
-   2.html <feedback/Bitdiddle/Problem%20Set%201/Problem%202.html>`__
+   2.html <feedback/Bitdiddle/Problem%20Set%201/Problem%202.html>`_
 
 Feedback for submission 2:
 
 -  `feedback/Hacker/Problem Set 1/Problem
-   1.html <feedback/Hacker/Problem%20Set%201/Problem%201.html>`__
+   1.html <feedback/Hacker/Problem%20Set%201/Problem%201.html>`_
 -  `feedback/Hacker/Problem Set 1/Problem
-   2.html <feedback/Hacker/Problem%20Set%201/Problem%202.html>`__
+   2.html <feedback/Hacker/Problem%20Set%201/Problem%202.html>`_
