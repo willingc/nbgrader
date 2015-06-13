@@ -82,19 +82,12 @@ autograder:
 
 .. parsed-literal::
 
-    [AutogradeApp | INFO] Linking submitted/Bitdiddle/Problem Set 1/timestamp.txt -> autograded/Bitdiddle/Problem Set 1/timestamp.txt
     [AutogradeApp | INFO] Linking submitted/Bitdiddle/Problem Set 1/jupyter.png -> autograded/Bitdiddle/Problem Set 1/jupyter.png
+    [AutogradeApp | INFO] Linking submitted/Bitdiddle/Problem Set 1/timestamp.txt -> autograded/Bitdiddle/Problem Set 1/timestamp.txt
     [AutogradeApp | INFO] Problem Set 1 for Bitdiddle submitted at 2015-02-02 14:58:23.948203
     [AutogradeApp | WARNING] Problem Set 1 for Bitdiddle is 86303.948203 seconds late
     [AutogradeApp | INFO] Overwriting files with master versions from the source directory
     [AutogradeApp | INFO] Linking source/./Problem Set 1/jupyter.png -> autograded/Bitdiddle/Problem Set 1/jupyter.png
-    [AutogradeApp | INFO] Sanitizing submitted/Bitdiddle/Problem Set 1/Problem 2.ipynb
-    [AutogradeApp | INFO] Converting notebook submitted/Bitdiddle/Problem Set 1/Problem 2.ipynb to notebook
-    [AutogradeApp | INFO] Writing 2483 bytes to autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
-    [AutogradeApp | INFO] Autograding autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
-    [AutogradeApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb to notebook
-    [AutogradeApp | INFO] Executing notebook with kernel: python
-    [AutogradeApp | INFO] Writing 2480 bytes to autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
     [AutogradeApp | INFO] Sanitizing submitted/Bitdiddle/Problem Set 1/Problem 1.ipynb
     [AutogradeApp | INFO] Converting notebook submitted/Bitdiddle/Problem Set 1/Problem 1.ipynb to notebook
     [AutogradeApp | WARNING] Checksum for grade cell correct_squares has changed!
@@ -104,19 +97,19 @@ autograder:
     [AutogradeApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 1.ipynb to notebook
     [AutogradeApp | INFO] Executing notebook with kernel: python
     [AutogradeApp | INFO] Writing 19467 bytes to autograded/Bitdiddle/Problem Set 1/Problem 1.ipynb
+    [AutogradeApp | INFO] Sanitizing submitted/Bitdiddle/Problem Set 1/Problem 2.ipynb
+    [AutogradeApp | INFO] Converting notebook submitted/Bitdiddle/Problem Set 1/Problem 2.ipynb to notebook
+    [AutogradeApp | INFO] Writing 2483 bytes to autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
+    [AutogradeApp | INFO] Autograding autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
+    [AutogradeApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb to notebook
+    [AutogradeApp | INFO] Executing notebook with kernel: python
+    [AutogradeApp | INFO] Writing 2480 bytes to autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
     [AutogradeApp | INFO] Setting destination file permissions to 444
-    [AutogradeApp | INFO] Linking submitted/Hacker/Problem Set 1/timestamp.txt -> autograded/Hacker/Problem Set 1/timestamp.txt
     [AutogradeApp | INFO] Linking submitted/Hacker/Problem Set 1/jupyter.png -> autograded/Hacker/Problem Set 1/jupyter.png
+    [AutogradeApp | INFO] Linking submitted/Hacker/Problem Set 1/timestamp.txt -> autograded/Hacker/Problem Set 1/timestamp.txt
     [AutogradeApp | INFO] Problem Set 1 for Hacker submitted at 2015-02-01 09:28:58.749302
     [AutogradeApp | INFO] Overwriting files with master versions from the source directory
     [AutogradeApp | INFO] Linking source/./Problem Set 1/jupyter.png -> autograded/Hacker/Problem Set 1/jupyter.png
-    [AutogradeApp | INFO] Sanitizing submitted/Hacker/Problem Set 1/Problem 2.ipynb
-    [AutogradeApp | INFO] Converting notebook submitted/Hacker/Problem Set 1/Problem 2.ipynb to notebook
-    [AutogradeApp | INFO] Writing 2575 bytes to autograded/Hacker/Problem Set 1/Problem 2.ipynb
-    [AutogradeApp | INFO] Autograding autograded/Hacker/Problem Set 1/Problem 2.ipynb
-    [AutogradeApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 2.ipynb to notebook
-    [AutogradeApp | INFO] Executing notebook with kernel: python
-    [AutogradeApp | INFO] Writing 2572 bytes to autograded/Hacker/Problem Set 1/Problem 2.ipynb
     [AutogradeApp | INFO] Sanitizing submitted/Hacker/Problem Set 1/Problem 1.ipynb
     [AutogradeApp | INFO] Converting notebook submitted/Hacker/Problem Set 1/Problem 1.ipynb to notebook
     [AutogradeApp | INFO] Writing 6910 bytes to autograded/Hacker/Problem Set 1/Problem 1.ipynb
@@ -124,6 +117,13 @@ autograder:
     [AutogradeApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 1.ipynb to notebook
     [AutogradeApp | INFO] Executing notebook with kernel: python
     [AutogradeApp | INFO] Writing 7252 bytes to autograded/Hacker/Problem Set 1/Problem 1.ipynb
+    [AutogradeApp | INFO] Sanitizing submitted/Hacker/Problem Set 1/Problem 2.ipynb
+    [AutogradeApp | INFO] Converting notebook submitted/Hacker/Problem Set 1/Problem 2.ipynb to notebook
+    [AutogradeApp | INFO] Writing 2575 bytes to autograded/Hacker/Problem Set 1/Problem 2.ipynb
+    [AutogradeApp | INFO] Autograding autograded/Hacker/Problem Set 1/Problem 2.ipynb
+    [AutogradeApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 2.ipynb to notebook
+    [AutogradeApp | INFO] Executing notebook with kernel: python
+    [AutogradeApp | INFO] Writing 2572 bytes to autograded/Hacker/Problem Set 1/Problem 2.ipynb
     [AutogradeApp | INFO] Setting destination file permissions to 444
 
 

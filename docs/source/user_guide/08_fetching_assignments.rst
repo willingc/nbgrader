@@ -92,7 +92,7 @@ directory to the local directory:
 .. parsed-literal::
 
     total 20
-    -r--r--r-- 1 travis travis 5733 Jun 12 23:52 jupyter.png
-    -rw-r--r-- 1 travis travis 6873 Jun 12 23:52 Problem 1.ipynb
-    -rw-r--r-- 1 travis travis 2442 Jun 12 23:52 Problem 2.ipynb
+    -r--r--r-- 1 travis travis 5733 Jun 13 00:40 jupyter.png
+    -rw-r--r-- 1 travis travis 6873 Jun 13 00:40 Problem 1.ipynb
+    -rw-r--r-- 1 travis travis 2442 Jun 13 00:40 Problem 2.ipynb
 
