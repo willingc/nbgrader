@@ -64,7 +64,7 @@ their grades:
 
 .. parsed-literal::
 
-    Reasoner
+    Student<Reasoner>
 
 
 
@@ -82,10 +82,10 @@ autograder:
 
 .. parsed-literal::
 
-    [AutogradeApp | INFO] Linking submitted/Bitdiddle/Problem Set 1/jupyter.png -> autograded/Bitdiddle/Problem Set 1/jupyter.png
     [AutogradeApp | INFO] Linking submitted/Bitdiddle/Problem Set 1/timestamp.txt -> autograded/Bitdiddle/Problem Set 1/timestamp.txt
-    [AutogradeApp | INFO] Problem Set 1 for Bitdiddle submitted at 2015-02-02 14:58:23.948203
-    [AutogradeApp | WARNING] Problem Set 1 for Bitdiddle is 86303.948203 seconds late
+    [AutogradeApp | INFO] Linking submitted/Bitdiddle/Problem Set 1/jupyter.png -> autograded/Bitdiddle/Problem Set 1/jupyter.png
+    [AutogradeApp | INFO] SubmittedAssignment<Problem Set 1 for Bitdiddle> submitted at 2015-02-02 14:58:23.948203
+    [AutogradeApp | WARNING] SubmittedAssignment<Problem Set 1 for Bitdiddle> is 86303.948203 seconds late
     [AutogradeApp | INFO] Overwriting files with master versions from the source directory
     [AutogradeApp | INFO] Linking source/./Problem Set 1/jupyter.png -> autograded/Bitdiddle/Problem Set 1/jupyter.png
     [AutogradeApp | INFO] Sanitizing submitted/Bitdiddle/Problem Set 1/Problem 1.ipynb
@@ -105,9 +105,9 @@ autograder:
     [AutogradeApp | INFO] Executing notebook with kernel: python
     [AutogradeApp | INFO] Writing 2480 bytes to autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb
     [AutogradeApp | INFO] Setting destination file permissions to 444
-    [AutogradeApp | INFO] Linking submitted/Hacker/Problem Set 1/jupyter.png -> autograded/Hacker/Problem Set 1/jupyter.png
     [AutogradeApp | INFO] Linking submitted/Hacker/Problem Set 1/timestamp.txt -> autograded/Hacker/Problem Set 1/timestamp.txt
-    [AutogradeApp | INFO] Problem Set 1 for Hacker submitted at 2015-02-01 09:28:58.749302
+    [AutogradeApp | INFO] Linking submitted/Hacker/Problem Set 1/jupyter.png -> autograded/Hacker/Problem Set 1/jupyter.png
+    [AutogradeApp | INFO] SubmittedAssignment<Problem Set 1 for Hacker> submitted at 2015-02-01 09:28:58.749302
     [AutogradeApp | INFO] Overwriting files with master versions from the source directory
     [AutogradeApp | INFO] Linking source/./Problem Set 1/jupyter.png -> autograded/Hacker/Problem Set 1/jupyter.png
     [AutogradeApp | INFO] Sanitizing submitted/Hacker/Problem Set 1/Problem 1.ipynb

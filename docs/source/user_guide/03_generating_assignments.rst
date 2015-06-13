@@ -66,7 +66,7 @@ we'll also include a due date for it:
 
 .. parsed-literal::
 
-    Problem Set 1
+    Assignment<Problem Set 1>
 
 
 

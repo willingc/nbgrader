@@ -54,15 +54,15 @@ Generating feedback is fairly straigtforward:
 
 .. parsed-literal::
 
-    [FeedbackApp | INFO] Linking autograded/Bitdiddle/Problem Set 1/jupyter.png -> feedback/Bitdiddle/Problem Set 1/jupyter.png
     [FeedbackApp | INFO] Linking autograded/Bitdiddle/Problem Set 1/timestamp.txt -> feedback/Bitdiddle/Problem Set 1/timestamp.txt
+    [FeedbackApp | INFO] Linking autograded/Bitdiddle/Problem Set 1/jupyter.png -> feedback/Bitdiddle/Problem Set 1/jupyter.png
     [FeedbackApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 1.ipynb to html
     [FeedbackApp | INFO] Writing 277013 bytes to feedback/Bitdiddle/Problem Set 1/Problem 1.html
     [FeedbackApp | INFO] Converting notebook autograded/Bitdiddle/Problem Set 1/Problem 2.ipynb to html
     [FeedbackApp | INFO] Writing 250939 bytes to feedback/Bitdiddle/Problem Set 1/Problem 2.html
     [FeedbackApp | INFO] Setting destination file permissions to 444
-    [FeedbackApp | INFO] Linking autograded/Hacker/Problem Set 1/jupyter.png -> feedback/Hacker/Problem Set 1/jupyter.png
     [FeedbackApp | INFO] Linking autograded/Hacker/Problem Set 1/timestamp.txt -> feedback/Hacker/Problem Set 1/timestamp.txt
+    [FeedbackApp | INFO] Linking autograded/Hacker/Problem Set 1/jupyter.png -> feedback/Hacker/Problem Set 1/jupyter.png
     [FeedbackApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 1.ipynb to html
     [FeedbackApp | INFO] Writing 263054 bytes to feedback/Hacker/Problem Set 1/Problem 1.html
     [FeedbackApp | INFO] Converting notebook autograded/Hacker/Problem Set 1/Problem 2.ipynb to html
