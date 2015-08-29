@@ -9,7 +9,9 @@ Developing assignments with the assignment toolbar
     :doc:`01_philosophy`
         More details on how the nbgrader hierarchy is structured.
 
-Before you can begin developing assignments, you will need to actually install the nbgrader toolbar. If you do not have it installed, please first follow the instructions `here <https://github.com/jupyter/nbgrader>`__.
+**Quick check**: Before developing assignments, you should be sure to
+`install the nbgrader toolbar`.
+
 Once the toolbar has been installed, you should see it in the drop down "Cell toolbar" menu:
 
 .. figure:: images/assignment_toolbar.png
@@ -114,7 +116,7 @@ Most problems can be autograded. Problems that involve writing fruitful function
 Tips for writing good test cases
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Test each function/feature in isolation. If a problem contains many functions or parts, write cases that test each of these functions individually. Testing one function at a time makes it easier for you to track an error. 
+Test each function/feature in isolation. If a problem contains many functions or parts, write cases that test each of these functions individually. Testing one function at a time makes it easier for you to track an error.
 
 Organize test cases consistently. It can be helpful to arrange and group your test cases with comments.
 

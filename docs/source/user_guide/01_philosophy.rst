@@ -1,6 +1,12 @@
 
-The philosophy and the approach
-===============================
+The philosophy
+==============
+
+TODO: intro paragraph likely taken from existing press articles
+
+
+Overview of approach and assumptions
+====================================
 
 nbgrader makes a few assumptions about how the files for your
 assignments are organized. By default, nbgrader assumes that your
